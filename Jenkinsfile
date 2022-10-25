@@ -4,7 +4,7 @@ node{
    def tomcatBin = 'C:\\apache-tomcat-9.0.68\\bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
-     git 'https://github.com/nagasaisameeta/HDFC_proj.git'
+     git 'git branch: 'main', credentialsId: 'b74580ba-05a2-4a1f-b1e3-cb77700f81f0', url: 'https://github.com/nagasaisameeta/HDFC_proj.git'
    }
    stage('Compile-Package-create-war-file'){
       // Get maven home path
